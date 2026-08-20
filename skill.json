@@ -1,0 +1,35 @@
+{
+  "name": "genpark-proactive-ai-executive-assistant-meeting-scheduler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Proactive AI executive assistant for autonomous meeting scheduling, agenda synthesis & follow-up action creation.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "executive-assistant",
+    "meeting-scheduler",
+    "proactive-ai",
+    "agenda-synthesizer",
+    "hey-noah"
+  ],
+  "inputs": {
+    "calendar_context": {
+      "type": "object"
+    },
+    "meeting_request_text": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "scheduled_event": {
+      "type": "object"
+    },
+    "pre_meeting_brief": {
+      "type": "string"
+    },
+    "suggested_agenda_items": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
